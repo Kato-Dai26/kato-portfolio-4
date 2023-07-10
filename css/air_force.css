@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+.site_title{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 80px;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.mainvisual{
+  background-image: url('../img/nike24.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 200px;
+  width: 100vw;
+  height: 80vh;
+  color: #fff;
+  text-shadow: #000 3px 3px 5px;
+  font-style: italic;
+  text-align: center;
+}
+
+.mainvisual h2{
+  font-size: 4rem;
+  font-weight: bold;
+} 
+.mainvisual p{
+  font-size: 3rem;
+} 
+
+.feature{
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 80px auto 0;
+}
+
+
+.feature_txt_box{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.feature_txt_box + .feature_txt_box{
+  margin-top: 50px;
+}
+
+.feature_txt{
+  width: 50%;
+  margin-right: 20px;
+}
+
+.feature_txt h3{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.feature_txt p{
+  font-size: 1rem;
+  text-align: left;
+}
+
+.feature_pic{
+  width: 40%;
+}
+
+.feature_pic img{
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+}
+
+.fadeIn_up {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 2s;
+}
+.fadeIn_up.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.line_up{
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 80px auto 0;
+}
+
+.popular1{
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.popular1_pic{
+  width: 50%;
+}
+
+.popular1_pic img{
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.popular1_txt{
+  box-sizing: border-box;
+  padding: 30px 70px;
+  width: 50%;
+  height: 550px;
+  border-left: #000 solid 30px;
+}
+
+.popular1_txt h3{
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.7rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.popular1_txt h4{
+  margin: 20px 0 10px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.popular1_txt_dec{
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  line-height: 1.3rem;
+  color: #333;
+}
+
+.popular2{
+  flex-direction: row;
+}
+
+.popular2_txt{
+  border-right: #000 solid 30px;
+  border-left: none;
+}
+
+.online{
+  margin-top: 50px;
+}
+
+.online_box{
+  width: 330px;
+  margin: 0 auto;
+}
+
+
+.online_pic img{
+  width: 100%;
+  height: 140px;
+}
+
+.online_txt{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(241, 54, 54, 0.5);
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.online_txt:hover{
+  color: #fff;
+  background-color: red;
+}
+
+@media(max-width:999px){
+
+  .site_title{
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .mainvisual{
+    background-position: center;
+    height: 60vh;
+  }
+  
+  .mainvisual h2{
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+  } 
+  .mainvisual p{
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+  } 
+  
+  .feature_txt h3{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .feature_txt p{
+    font-size: 1rem;
+    padding: 0 9px;
+    line-height: 1.1rem;
+  }
+  
+  .feature_pic img{
+    object-fit: contain;
+  }
+  
+  .popular1{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .popular1_pic{
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .popular1_pic img{
+    height: 390px;
+    object-fit: cover;
+    object-position: center 58%;
+  }
+  
+  .popular1_txt{
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border-left: none;
+  }
+  
+  .popular1_txt h3{
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+  }
+  
+  .popular1_txt h4{
+    margin: 13px 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .popular1_txt_dec{
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    line-height: normal;
+  }
+  
+  .popular2{
+    flex-direction: column-reverse;
+  }
+
+  .popular2 img{
+    height: 400px;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+  
+  .popular2_txt{
+    border-right: none;
+  }
+  
+  .online_box{
+    width: 250px;
+  }
+  
+  .online_pic img{
+    height: 100px;
+  }
+  
+  .online_txt{
+    font-size: 1.3rem;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .mainvisual h2{
+    font-size: 1.3rem;
+  } 
+  .mainvisual p{
+    font-size: 1rem;
+  } 
+
+  .feature_txt h3{
+    margin-bottom: 15px;
+    font-size: .77rem;
+  }
+  
+  .feature_txt p{
+    font-size: .63rem;
+    padding: 0 8px;
+  }
+
+  .popular1_txt h3{
+    font-size: 1.4rem;
+  }
+  
+  .popular1_txt h4{
+    font-size: .95rem;
+  }
+  
+  .popular1_txt_dec{
+    font-size: .8rem;
+    letter-spacing: .2rem;
+  }
+
+  .popular1_pic img{
+    height: 250px;
+    object-position: center 57%;
+  }
+
+  .popular2 img{
+    height: 250px;
+    object-position: center 35%;
+  }
+  
+}
